@@ -4,11 +4,8 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.util.Arrays;
 
-/**
- * Created by ITEA on 11.12.2014.
- */
 public class FileDemo {
-    static String path = "G:\\Work\\txt";
+    static String path = "F:\\Work\\txt";
 
     public static void main(String[] args) {
         File file = new File(path);

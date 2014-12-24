@@ -6,7 +6,7 @@ public class Events2 implements IEvents {
     public void onNewLine(String line) {
         String s = line + "\r\n"; // конец строки
         try {
-            RandomAccessFile r = new RandomAccessFile("1.txt", "rw");
+            RandomAccessFile r = new RandomAccessFile("51.txt", "rw");
             try {
                 r.seek(r.length());
                 r.write(s.getBytes());

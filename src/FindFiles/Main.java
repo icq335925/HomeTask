@@ -32,7 +32,7 @@ public class Main {
 		ArrayList<String> list = new ArrayList<String>();
 
 		try {
-			findFiles("G:\\Work\\txt", ".txt", list);
+			findFiles("F:\\Work\\txt", ".txt", list);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
