@@ -17,7 +17,9 @@ public class Dictionary {
     public static void main(String[] args) throws IOException {
 
         /*
-        Читаем файл и переводим строки в массив
+        Есть два файла с рускими и англ. словами соответственно
+        Обрабатываем файлы и делаем массивы
+        
          */
 
         BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("eng.txt"), "UTF-8"));
@@ -38,14 +40,17 @@ public class Dictionary {
 
 
         BufferedReader size = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите массив символов: ");
+        System.out.println("Введите слово: ");
         String slovoIn = size.readLine();
 
+// Засовываем все в хэшкарту
 
         Map<String, String> map = new HashMap<>();
         for (int i = 0; i < rusDic.size(); i++) {
             map.put(rusDic.get(i), engDic.get(i));
         }
+        
+//Поиск без карты
         for (int i = 0; i < rusDic.size(); i++) {
             if (slovoIn.equals(rusDic.get(i))) {
                 System.out.println("'"+engDic.get(i)+"'");
